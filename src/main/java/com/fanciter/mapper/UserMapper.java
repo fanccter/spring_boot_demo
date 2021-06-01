@@ -1,11 +1,22 @@
 package com.fanciter.mapper;
 
-
+import com.fanciter.bean.User;
+import com.fanciter.bean.UserExample;
+import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import com.fanciter.bean.UserBean;
 
 public interface UserMapper {
+    int countByExample(UserExample example);
 
-    UserBean getInfo(@Param("name")String name, @Param("password")String password);
+    int deleteByExample(UserExample example);
 
+    int insert(User record);
+
+    int insertSelective(User record);
+
+    List<User> selectByExample(UserExample example);
+
+    int updateByExampleSelective(@Param("record") User record, @Param("example") UserExample example);
+
+    int updateByExample(@Param("record") User record, @Param("example") UserExample example);
 }

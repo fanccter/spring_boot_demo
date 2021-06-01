@@ -1,9 +1,10 @@
 package com.fanciter.service;
 
-import com.fanciter.bean.UserBean;
+import java.util.List;
+import com.fanciter.bean.User;
 
 public interface UserService {
 
-    UserBean loginIn(String name, String password);
+    List<User> loginIn(String name, String password);
 
 }

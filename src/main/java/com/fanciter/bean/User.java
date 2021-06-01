@@ -1,16 +1,17 @@
 package com.fanciter.bean;
 
-public class UserBean {
-    private int id;
+public class User {
     private String name;
+
     private String password;
 
-    public int getId() {
-        return id;
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public User() {
+        super();
     }
 
     public String getName() {
@@ -18,7 +19,7 @@ public class UserBean {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public String getPassword() {
@@ -26,6 +27,6 @@ public class UserBean {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = password == null ? null : password.trim();
     }
 }
