@@ -2,7 +2,7 @@ server:
   port: 1000
 spring:
   application:
-    name: eaglehorn-govdata-server
+    name: springboot_demo
   thymeleaf:
     cache: false
   datasource:
