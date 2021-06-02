@@ -9,7 +9,7 @@ import com.fanciter.bean.User;
 import com.fanciter.service.UserService;
 
 @Controller
-public class LoginController {
+public class LoginApi {
 
     @Autowired
     UserService userService;

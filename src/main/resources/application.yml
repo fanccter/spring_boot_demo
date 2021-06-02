@@ -15,6 +15,6 @@ mybatis:
   type-aliases-package: com.fanciter.bean
 
 ## 日志级别设置
-logging:
-  level:
-    com.fanciter: DEBUG
+#logging:
+#  level:
+#    com.fanciter: DEBUG
