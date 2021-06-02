@@ -5,9 +5,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 import org.apache.commons.lang3.StringUtils;
 
-/**
- * Created by linyisheng on 2018/5/10.
- */
 public class PwdMd5Util {
 
     /**
